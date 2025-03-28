@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f0f4f8;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2a2f45;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.flow-container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* Node styles */
+.node {
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.node-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.node-content {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.node-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.llm-node {
+  background-color: #e8f4fd;
+  border: 2px solid #67b0e8;
+}
+
+.rag-node {
+  background-color: #f2f9ed;
+  border: 2px solid #7bc86c;
+}
+
+.application-node {
+  background-color: #f9f0ff;
+  border: 2px solid #c377e0;
+}
+
+.expand-button {
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.expand-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.expanded-content {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 0.7rem;
+  text-align: left;
+}
