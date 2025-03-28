@@ -6,6 +6,7 @@ type ApplicationNodeProps = {
     title: string;
     description: string;
     details: string;
+    icon?: string;
   };
 };
 
@@ -15,13 +16,16 @@ const ApplicationNode = ({ data }: ApplicationNodeProps) => {
   return (
     <div className="node application-node">
       <Handle type="target" position={Position.Left} className="handle" />
-      <div className="node-icon">💻</div>
+      <div className="node-icon">{data.icon || '💻'}</div>
       <div className="node-title">{data.title}</div>
       <div className="node-content">{data.description}</div>
       
       <button 
         className="expand-button" 
-        onClick={() => setExpanded(!expanded)}
+        onClick={(e) => {
+          e.stopPropagation(); // Prevent node selection when clicking button
+          setExpanded(!expanded);
+        }}
       >
         {expanded ? 'Hide Details' : 'Show Details'}
       </button>

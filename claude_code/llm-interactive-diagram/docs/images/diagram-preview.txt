@@ -1,0 +1,9 @@
+Note: This is a placeholder text file for diagram-preview.png.
+
+In a real scenario, you would take a screenshot of the running application and save it here as diagram-preview.png.
+
+For the README.md to display correctly with the image reference, you would need to:
+1. Run the application (npm run dev)
+2. Take a screenshot of the diagram
+3. Save it as docs/diagram-preview.png
+4. Update the image path in README.md if necessary
