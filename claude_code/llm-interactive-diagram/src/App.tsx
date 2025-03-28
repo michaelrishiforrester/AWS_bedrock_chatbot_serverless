@@ -34,6 +34,9 @@ function App() {
           nodes={nodes}
           edges={edges}
           nodeTypes={nodeTypes}
+          defaultZoom={0.7}
+          minZoom={0.2}
+          maxZoom={1.5}
           fitView
         >
           <Background />

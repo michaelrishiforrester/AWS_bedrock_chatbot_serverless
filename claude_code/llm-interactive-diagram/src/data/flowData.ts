@@ -16,7 +16,7 @@ export const initialNodes: Node[] = [
   {
     id: 'llm-2',
     type: 'llmNode',
-    position: { x: 100, y: 200 },
+    position: { x: 100, y: 250 },
     data: {
       title: 'Attention Layers',
       description: 'Core mechanism for contextual understanding',
@@ -26,7 +26,7 @@ export const initialNodes: Node[] = [
   {
     id: 'llm-3',
     type: 'llmNode',
-    position: { x: 100, y: 350 },
+    position: { x: 100, y: 450 },
     data: {
       title: 'Feed-Forward Networks',
       description: 'Processes token representations',
@@ -36,7 +36,7 @@ export const initialNodes: Node[] = [
   {
     id: 'llm-4',
     type: 'llmNode',
-    position: { x: 100, y: 500 },
+    position: { x: 100, y: 650 },
     data: {
       title: 'Output Layer',
       description: 'Generates token probabilities',
@@ -48,7 +48,7 @@ export const initialNodes: Node[] = [
   {
     id: 'rag-1',
     type: 'ragNode',
-    position: { x: 400, y: 100 },
+    position: { x: 450, y: 150 },
     data: {
       title: 'Document Storage',
       description: 'Repository of knowledge documents',
@@ -58,7 +58,7 @@ export const initialNodes: Node[] = [
   {
     id: 'rag-2',
     type: 'ragNode',
-    position: { x: 400, y: 250 },
+    position: { x: 450, y: 350 },
     data: {
       title: 'Embedding Index',
       description: 'Vector database for semantic search',
@@ -68,7 +68,7 @@ export const initialNodes: Node[] = [
   {
     id: 'rag-3',
     type: 'ragNode',
-    position: { x: 400, y: 400 },
+    position: { x: 450, y: 550 },
     data: {
       title: 'Retrieval System',
       description: 'Finds relevant context for queries',
@@ -80,7 +80,7 @@ export const initialNodes: Node[] = [
   {
     id: 'app-1',
     type: 'applicationNode',
-    position: { x: 700, y: 100 },
+    position: { x: 800, y: 150 },
     data: {
       title: 'API Gateway',
       description: 'Provides access to LLM services',
@@ -90,7 +90,7 @@ export const initialNodes: Node[] = [
   {
     id: 'app-2',
     type: 'applicationNode',
-    position: { x: 700, y: 250 },
+    position: { x: 800, y: 350 },
     data: {
       title: 'Prompt Engineering',
       description: 'Crafts effective instructions for LLMs',
@@ -100,7 +100,7 @@ export const initialNodes: Node[] = [
   {
     id: 'app-3',
     type: 'applicationNode',
-    position: { x: 700, y: 400 },
+    position: { x: 800, y: 550 },
     data: {
       title: 'Response Processing',
       description: 'Processes and validates LLM outputs',
